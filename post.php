@@ -9,7 +9,9 @@
 <body>
     <h1 align = center>Webboard KAKKAK</h1>
     <hr>
-    <div align = center>ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?></div>
+    <div align = center>ต้องการดูกระทู้หมายเลข <?php $id = $_GET["id"]; echo $id; ?><br>
+                        เป็นกระทู้หมายเลย<?php if($id%2 == 0){echo "คู่";} else {echo "คี่";} ?>
+</div>
     <br>
     <table style="border: 2px solid black; width: 40%;" align="center">
             <tr style="background-color: #6CD2FE;"><td>แสดงความคิดเห็น</td></tr>
@@ -20,6 +22,6 @@
                
     </table>
     <br>
-    <div style="text-align:center;"><a href="index.html">กลับไปหน้าหลัก</a></div>
+    <div style="text-align:center;"><a href="index.php">กลับไปหน้าหลัก</a></div>
 </body>
 </html>
