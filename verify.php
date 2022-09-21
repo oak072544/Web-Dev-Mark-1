@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id']))
+    {
+        header("location:index.php");
+        die();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +25,16 @@
             if ($login == "admin" && $pwd == "ad1234")
             {
                 echo "ยินดีต้อนรับคุณ ADMIN";
+                $_SESSION['username']='admin';
+                $_SESSION['role']='a';
+                $_SESSION['id']=session_id();
             }
             elseif ($login == "member" && $pwd == "mem1234")
             {
                 echo "ยินดีต้อนรับคุณ MEMBER";
+                $_SESSION['username']='member';
+                $_SESSION['role']='m';
+                $_SESSION['id']=session_id();
             }
             else
             {
