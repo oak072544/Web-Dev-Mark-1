@@ -71,7 +71,7 @@
                         <div class="row mb-3">
                             <label class="col-md-3 col-form-label">อีเมล : </label>
                             <div class="col-md-9">
-                                <input type="text" name="email" class=" form-control" required>
+                                <input type="email" name="email" class=" form-control" required>
                             </div>
                         </div>
                         <div class="row mb-3">
