@@ -23,6 +23,6 @@
         $_SESSION['add_login']='success';
     }
     $conn=null;
-    header("location:register.php");
+    header("Location:register.php");
     die();
 ?>
